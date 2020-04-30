@@ -15,9 +15,9 @@
     <tbody> 
         <% @artists.each do |artist| %> 
             <tr> 
-                <td><%= @artist.name %> 
-                <td><%= @artist.title %> 
-                <td><%= @artist.age %> 
+                <td><%= artist.name %> 
+                <td><%= artist.title %> 
+                <td><%= artist.age %> 
                 <td> 
                     <%= link_to 'View', artist %> 
                 </td>
