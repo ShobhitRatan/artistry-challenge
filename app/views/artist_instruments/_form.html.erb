@@ -1,0 +1,13 @@
+<%= form_for @artist_instrument do |f|%> 
+    <div class="field"> 
+        <%= f.label :artist_id %> 
+        <%= f.collection_select :artist_id, @artists, :id, :name %> 
+    </div> 
+    <div class="field"> 
+        <%= f.label :instrument_id %> 
+        <%= f.collection_select :instrument_id, @instruments, :id, :name %> 
+    </div> 
+    <div class="actions"> 
+        <%= f.submit %> 
+    </div> 
+<% end %> 
