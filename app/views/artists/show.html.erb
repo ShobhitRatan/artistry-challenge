@@ -1,2 +1,13 @@
-<h1>Artists#show</h1>
-<p>Find me in app/views/artists/show.html.erb</p>
+<div class="container"> 
+    <h1>Show Artist</h1> 
+
+    <h3><%= @artist.name %> 
+    <h3><%= @artist.title %> 
+    <h3><%= @artist.age %> 
+
+    <h1>My Instruments</h1> 
+    <% @artist.instruments.uniq.each do |instrument| %> 
+        <p><%= instrument.name %></p> 
+    <% end %> 
+    <h2><%= button_to "Back to Artists", artists_path, method: :get %></h2> 
+</div> 
